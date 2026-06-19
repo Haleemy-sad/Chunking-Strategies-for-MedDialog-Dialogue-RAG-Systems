@@ -1,3 +1,48 @@
+# clean-rag-med-dialog
+
+Medical-dialogue retrieval evaluation suite (cleaned snapshot).
+
+This repository contains the runtime code and evaluation utilities needed to reproduce retrieval experiments on the MedDialog dataset. Generation (LLM) components have been intentionally removed to keep the public copy lightweight.
+
+Quick start
+ - Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+ - Provide the MedDialog dataset at `data/downloaded/meddialog.json` (see below), then run experiments:
+
+```bash
+python run_experiment.py --max-dialogues 500
+```
+
+ - Run the Streamlit UI (generation disabled):
+
+```bash
+streamlit run ui/app.py
+```
+
+Dataset
+ - This repository does not include the MedDialog dataset file due to size and redistribution constraints.
+ - Use `scripts/download_meddialog.py` to assist with downloading or placing the dataset file at `data/downloaded/meddialog.json`.
+
+Files included
+ - `chunking/` — chunking strategies used in experiments
+ - `embeddings/` — embedding utilities
+ - `vector_store/` — FAISS index helper
+ - `retrieval/` — retrieval wrappers
+ - `evaluation/` — offline metrics (retrieval, efficiency, hallucination)
+ - `ui/` — Streamlit app (generation disabled)
+ - `run_experiment.py` — orchestrates indexing and evaluation runs
+
+Notes for reviewers
+ - `results/` is gitignored; experiment outputs are intentionally kept local and archived outside this repo.
+ - If you need a full dataset snapshot for internal review, provide it separately and place it at `data/downloaded/meddialog.json`.
+
+Support
+ - If you need assistance reproducing results or creating a release bundle (without history), open an issue or contact the maintainer.
+
 # RAG Medical Dialogue System
 
 A retrieval-focused system for medical dialogue analysis, designed for academic research comparing chunking strategies.

@@ -1,13 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software in your research, please cite it as below."
-title: "Chunking Strategies for MedDialog RAG Systems"
-version: "1.0.0"
+message: "Citation information for this cleaned project snapshot. The MedDialog dataset should be cited separately as required by its license."
+title: "Chunking Strategies for MedDialog Retrieval — Cleaned Snapshot"
+version: "0.1.0"
 authors:
-  - family-names: "YourLastName"
-    given-names: "YourFirstName"
+  - family-names: "Sad"
+    given-names: "Haleemy"
+    affiliation: "Independent Research"
 date-released: "2026-06-19"
 url: "https://github.com/Haleemy-sad/Chunking-Strategies-for-MedDialog-Dialogue-RAG-Systems"
-preferred-citation: "YourFirstName YourLastName (2026). Chunking Strategies for MedDialog RAG Systems. GitHub repository."
+preferred-citation: "Sad, H. (2026). Chunking Strategies for MedDialog Retrieval — Cleaned Snapshot. GitHub repository."
 license: "MIT"
-
-# Please edit `authors` and `preferred-citation` to include the correct names and affiliation before sharing.
