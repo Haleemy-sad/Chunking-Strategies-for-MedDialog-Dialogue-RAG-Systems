@@ -3,4 +3,4 @@ __pycache__/
 *.pyc
 .env
 .vscode/
-.DS_Store
+.DS_Storedata/downloaded/meddialog.json
