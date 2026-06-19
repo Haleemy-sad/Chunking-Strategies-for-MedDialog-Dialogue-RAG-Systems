@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Chunking Strategies for MedDialog RAG Systems"
+version: "1.0.0"
+authors:
+  - family-names: "YourLastName"
+    given-names: "YourFirstName"
+date-released: "2026-06-19"
+url: "https://github.com/Haleemy-sad/Chunking-Strategies-for-MedDialog-Dialogue-RAG-Systems"
+preferred-citation: "YourFirstName YourLastName (2026). Chunking Strategies for MedDialog RAG Systems. GitHub repository."
+license: "MIT"
+
+# Please edit `authors` and `preferred-citation` to include the correct names and affiliation before sharing.
