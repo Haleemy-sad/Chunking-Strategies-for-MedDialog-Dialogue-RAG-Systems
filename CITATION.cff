@@ -1,10 +1,9 @@
 cff-version: 1.2.0
-message: "Citation information for this cleaned project snapshot. The MedDialog dataset should be cited separately as required by its license."
-title: "Chunking Strategies for MedDialog Retrieval — Cleaned Snapshot"
+message: "Citation information for this project snapshot. The MedDialog dataset should be cited separately as required by its license."
+title: "Chunking Strategies for MedDialog Retrieval"
 version: "0.1.0"
 authors:
-  - family-names: "Sad"
-    given-names: "Haleemy"
+    given-names: "Haleema Sadia"
     affiliation: "Independent Research"
 date-released: "2026-06-19"
 url: "https://github.com/Haleemy-sad/Chunking-Strategies-for-MedDialog-Dialogue-RAG-Systems"
