@@ -1,8 +1,8 @@
-# clean-rag-med-dialog
+# Readme
 
-Medical-dialogue retrieval evaluation suite (cleaned snapshot).
+Medical-dialogue retrieval evaluation suite.
 
-This repository contains the runtime code and evaluation utilities needed to reproduce retrieval experiments on the MedDialog dataset. Generation (LLM) components have been intentionally removed to keep the public copy lightweight.
+This repository contains the runtime code and evaluation utilities needed to produce retrieval experiments on the MedDialog dataset.
 
 Quick start
  - Install dependencies:
@@ -11,7 +11,7 @@ Quick start
 python -m pip install -r requirements.txt
 ```
 
- - Provide the MedDialog dataset at `data/downloaded/meddialog.json` (see below), then run experiments:
+ - Provide the MedDialog dataset at `data/downloaded/meddialog.json` , then run experiments:
 
 ```bash
 python run_experiment.py --max-dialogues 500
