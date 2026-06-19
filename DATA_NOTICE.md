@@ -10,5 +10,3 @@ To obtain the dataset:
 Usage:
 - The code expects `data/downloaded/meddialog.json` to exist for local runs and experiments.
 - If you cannot store the dataset, set `max_samples` when running `run_experiment.py` to a smaller number or update `ui/app.py` to use a local sample.
-
-If you want, I can add a small downloader script `scripts/download_meddialog.py` that guides manual placement or prompts for credentials.
