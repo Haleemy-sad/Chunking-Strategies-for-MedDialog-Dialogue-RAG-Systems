@@ -2,7 +2,7 @@
 
 A retrieval-focused system for medical dialogue analysis, designed for academic research comparing chunking strategies.
 
-## 🎯 Project Objective
+##  Project Objective
 
 Build a modular RAG pipeline with evaluation framework and UI to:
 - Apply multiple chunking strategies on medical dialogue dataset (112K dialogues)
@@ -11,9 +11,9 @@ Build a modular RAG pipeline with evaluation framework and UI to:
 - Generate publication-quality visualizations and comparisons
 - Interact with the system via Streamlit UI
 
-## 🚀 Quick Start
+##  Quick Start
 
-```powershell
+``` powershell
 # 1. Install dependencies
 pip install -r requirements.txt
 
@@ -21,13 +21,12 @@ pip install -r requirements.txt
 .\venv\Scripts\Activate.ps1
 python run_experiment.py --max-dialogues 500
 
-# 3. Generate visualizations
-# Chunking strategies for MedDialog — cleaned public copy
+# 3. Generate visualization 
+# Chunking strategies for MedDialog 
 
 This repository provides tools for loading the MedDialog-EN dataset, applying several
 chunking strategies, building FAISS vector indexes, and running retrieval experiments.
-This public copy has generation/model-serving code removed to keep the repository
-lightweight and self-contained for reproducible retrieval experiments.
+
 
 Key capabilities included in this copy:
 - Load MedDialog-EN from a local JSON file (`data/downloaded/meddialog.json`) or from HuggingFace when available.
@@ -36,15 +35,14 @@ Key capabilities included in this copy:
 - Embed text using the `embeddings.TextEmbedder` (sentence-transformers).
 - Build and query FAISS indexes (`vector_store/faiss_index.py`).
 - Evaluate retrieval, hallucination checks and efficiency metrics (`evaluation/`).
-- A Streamlit UI (`ui/app.py`) that demonstrates retrieval and strategy comparisons. Generation is disabled in the UI.
-
-This README only documents functionality that is implemented in the current codebase.
+- A Streamlit UI (`ui/app.py`) that demonstrates retrieval and strategy comparisons.
 
 ## Quick setup
 
 1. Create and activate a Python virtual environment (recommended):
 
 ```powershell
+
 python -m venv venv
 venv\Scripts\activate
 ```
@@ -55,7 +53,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Ensure you have the MedDialog JSON in `data/downloaded/meddialog.json` if you want to run the full dataset. The loader will fall back to sample dialogues if not present.
+3. Ensure you have the MedDialog JSON in `data/downloaded/meddialog.json` if you want to run the full dataset.
 
 ## Running the Streamlit demo
 
@@ -108,10 +106,10 @@ print(results[0])
 
 ## Notes on removed/disabled features
 
-- The generation pipeline and large LLM integrations are not included in this public copy. The UI and code intentionally avoid importing heavy generation models.
+- The generation pipeline and large LLM integrations are not included in this. The UI and code intentionally avoid importing heavy generation models.
 - Some evaluation utilities depend on external libraries (for example, `sentence-transformers` and `datasets`). If you only want to run retrieval demos, use CPU and smaller samples to reduce memory usage.
 
-## Project layout (high-level)
+## Project layout 
 
 Relevant files and folders:
 
@@ -126,7 +124,7 @@ Relevant files and folders:
 
 ## Troubleshooting
 
-- If `sentence-transformers` or `datasets` cause import errors, install the packages from `requirements.txt` and restart the environment. For quick tests, use the sample dialogues provided by the loader (they do not require downloads).
+- If `sentence-transformers` or `datasets` cause import errors, install the packages from `requirements.txt` and restart the environment. For quick tests, use the sample dialogues provided by the loader (they do not require downloads)
 - If FAISS is not available or fails to build, you can still test chunking and embedding code; FAISS is required for index building and search.
 
 ## License & Disclaimer
@@ -147,8 +145,7 @@ This is a research project. For modifications:
 ## 📧 Contact
 
 For questions about this research project:
-- Email: [your.email@university.edu]
-- Research Group: [Lab Name]
+- Email: [hsadia.msai23@seecs.edu.pk]
 
 ## 📄 License
 
